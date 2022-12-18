@@ -9,6 +9,11 @@ export default function UserContextProvider({ children }) {
   const addToCart = (item) => {
     setCart((prev) => [...new Set([...cart, item])]);
   };
+  const removeFromCart = (id) => {
+    const newCart = cart.filter((item) => item.id !== id);
+    setCart([...newCart]);
+  };
+
   return (
     <UserContext.Provider
       value={{
@@ -18,6 +23,7 @@ export default function UserContextProvider({ children }) {
         addToCart,
         checkSignUpRoute,
         setCheckSignUpRoute,
+        removeFromCart,
       }}
     >
       {children}

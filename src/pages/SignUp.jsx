@@ -61,9 +61,9 @@ const SignUp = () => {
               onChange={(e) => handleChange(e)}
             />
 
-            <div className='flex gap-1 items-center'>
+            <div className='flex gap-3 items-center'>
               <input type='checkbox' className='w-5 h-5 accent-green-600' />
-              <p className='flex gap-1'>
+              <p className='flex gap-3'>
                 By continuing, you agree to the
                 <Link to='/' className='underline text-green-600'>
                   Terms and conditions
