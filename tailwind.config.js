@@ -10,8 +10,7 @@ module.exports = {
         'orange-light': '#ed8d6c',
       },
       fontFamily: {
-        roboto: ['Roboto Mono', 'monospace'],
-        lilita: ['Lilita One', 'cursive'],
+        nunito: ['Nunito', 'sans-serif'],
       },
     },
   },
